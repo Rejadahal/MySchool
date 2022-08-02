@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#ECEF"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="245dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/academia"
+      android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="#7B3F00"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.03"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:text="Email"
+        android:background="@drawable/aad"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/purple_200"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:text="Password"
+        android:background="@drawable/aad"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/purple_200"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:text="confirm Password"
+        android:background="@drawable/aad"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/purple_200"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="REGISTER"
+        android:background="@drawable/button"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? sign In"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#7B3F00"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

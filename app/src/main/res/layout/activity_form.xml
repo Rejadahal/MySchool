@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#8089"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:text="Exam Form"
+        android:textColor="@color/black"
+        android:textSize="38sp" />
+
+    <EditText
+        android:id="@+id/names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="FullName"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/names"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:hint="Address"
+
+        android:paddingStart="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+
+    <EditText
+        android:id="@+id/phoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:hint="PhoneNo"
+        android:paddingStart="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneno"
+        android:layout_marginTop="10dp"
+
+
+        android:hint="Gender"
+        android:paddingStart="5dp"
+        android:textColor="@color/black" />
+
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:text="Male"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Female"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Others"
+
+            android:textSize="20sp" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio"
+        android:text="Subjets"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio"
+        android:layout_toRightOf="@id/item"
+
+        android:entries="@array/spinner_items"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@id/item"
+        android:text="submit"
+        android:textSize="20sp" />
+</RelativeLayout>
